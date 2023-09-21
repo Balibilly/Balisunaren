@@ -1,0 +1,113 @@
+
+
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    font-weight: normal;
+}
+h1.typeSentence.clickable-text {
+    font-size: 72px;
+}
+main {
+position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #e9e9e9;
+}
+.flexed {
+    display: flex;
+}
+.container.leftside {
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 3em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 80px;
+    overflow: auto;
+}
+
+.container.rightSide {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 3em 1.3em;
+    background: white;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    overflow: scroll;
+}
+
+
+section.artboard {
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    background: white;
+    gap: 90px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 4em;
+}
+
+section.five.artboard {
+    height: fit-content !important;
+}
+
+.character {
+    display: flex;
+}
+
+.five.artboard ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+.five.artboard ul li {
+    list-style: none;
+    border: 1px solid;
+    width: calc(100%/28);
+    margin: -0.5px;
+    padding: 16px;
+    min-height: 1.4em;
+}
+
+main {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.waterfall {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #ddd;
+    gap: 0.5rem;
+}
+
+.waterfall p {
+    min-inline-size: max-content;
+    line-height: calc(100vh / 100);
+}
+
+.waterfall span {
+    opacity: .4;
+    position: relative;
+}
+
+
+/*DARKMODE ADJUST*/
+.dark-mode {
+    filter: invert(1);
+}

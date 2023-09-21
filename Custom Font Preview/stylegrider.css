@@ -1,0 +1,367 @@
+@font-face {
+    font-family: BaliCerakanLangkirMedangsya-Regular;
+    src: url("font/BaliCerakanLangkirMedangsya-Regular.otf");
+}
+
+body {
+    font-family: 'BaliCerakanLangkirMedangsya-Regular' !important;
+    color: #0D426A;
+    background: #e2dac9;
+}
+
+.main {
+    background-color: tomato;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em 0em;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Hero"
+        "heroDescription"
+        "sectionGem"
+        "bigpemada"
+        "sectionHarmoni"
+        "harrmoImportant"
+        "nextsection";
+    height: fit-content;
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+.Hero {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 1.5fr 0.25fr 0.25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". heroTitle ."
+        ". heroTitle ."
+        ". heroTitle .";
+    grid-area: Hero;
+}
+
+.heroTitle {
+    grid-area: heroTitle;
+}
+
+.heroDescription {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". heroPemada ."
+        ". descriptionTitle ."
+        ". descriptionContent .";
+    grid-area: heroDescription;
+}
+
+.heroPemada {
+    grid-area: heroPemada;
+}
+
+.descriptionTitle {
+    grid-area: descriptionTitle;
+}
+
+.descriptionContent {
+    grid-area: descriptionContent;
+}
+
+.sectionGem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "gem1 gem1 gem1 gem1 ."
+        ". . gem2 gem2 ."
+        "gem3 gem3 gem3 gem4 gem4"
+        ". gem5 gem5 gem5 ."
+        ". gem6 gem6 . .";
+    grid-area: sectionGem;
+}
+
+.gem1 {
+    grid-area: gem1;
+}
+
+.gem3 {
+    grid-area: gem3;
+}
+
+.gem4 {
+    grid-area: gem4;
+}
+
+.gem2 {
+    grid-area: gem2;
+}
+
+.gem5 {
+    grid-area: gem5;
+}
+
+.gem6 {
+    grid-area: gem6;
+}
+
+.bigpemada {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "description";
+    grid-area: bigpemada;
+}
+
+.description {
+    grid-area: description;
+}
+
+.sectionHarmoni {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "harmo1 harmo1 . . ."
+        "harmo2 harmo2 . . ."
+        ". . harmo3 harmo3 harmo3"
+        "harmo4 harmo4 harmo4 harmo4 ."
+        ". harmo5 harmo5 harmo5 harmo5"
+        ". harmo6 harmo6 . ."
+        "harmoDescription harmoDescription harmoDescription harmoDescription harmoDescription";
+    grid-area: sectionHarmoni;
+}
+
+.harmo3 {
+    grid-area: harmo3;
+}
+
+.harmo4 {
+    grid-area: harmo4;
+}
+
+.harmo5 {
+    grid-area: harmo5;
+}
+
+.harmo1 {
+    grid-area: harmo1;
+}
+
+.harmo2 {
+    grid-area: harmo2;
+}
+
+.harmo6 {
+    grid-area: harmo6;
+}
+
+.harmoDescription {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "harmodesc1 harmodesc2 harmodesc3"
+        "harmodesc1b harmodesc2b harmodesc3b";
+    grid-area: harmoDescription;
+}
+
+.harmodesc1 {
+    grid-area: harmodesc1;
+}
+
+.harmodesc2 {
+    grid-area: harmodesc2;
+}
+
+.harmodesc3 {
+    grid-area: harmodesc3;
+}
+
+.harmodesc1b {
+    grid-area: harmodesc1b;
+}
+
+.harmodesc2b {
+    grid-area: harmodesc2b;
+}
+
+.harmodesc3b {
+    grid-area: harmodesc3b;
+}
+
+.harrmoImportant {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". harmoImpTitle harmoImpTitle harmoImpTitle ."
+        ". harmoImpDesc harmoImpDesc harmoImpDesc .";
+    grid-area: harrmoImportant;
+}
+
+.harmoImpTitle {
+    grid-area: harmoImpTitle;
+}
+
+.harmoImpDesc {
+    grid-area: harmoImpDesc;
+}
+
+.nextsection {
+    grid-area: nextsection;
+}
+
+
+h1 {
+    font-size: 160px;
+    line-height: .9;
+    font-weight: normal;
+    letter-spacing: -5px;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 152px;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: -5px;
+    margin: 0;
+}
+
+.container>div>* {
+    margin: 0 auto;
+}
+
+.container>div {
+    position: relative;
+}
+
+span.balinese.textTengah {
+    text-align: center;
+    margin: auto;
+    font-size: 230px;
+    position: relative;
+    line-height: 1.5;
+}
+
+p.textTengah.w40 {
+    text-align: center;
+    line-height: 1.8;
+}
+
+p.besar {
+    margin: auto;
+    width: 60%;
+    font-size: 38px !important;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.bigpemada {
+    height: calc(100vh + 5em) !important;
+}
+
+.description {
+    margin: 0 auto;
+}
+
+span.balinese.linggah {
+    font-size: 583px;
+    position: absolute;
+    margin: 0 auto !important;
+    display: none;
+    top: -345px;
+    left: calc(33vw /2);
+    mix-blend-mode: hard-light;
+    color: red;
+    z-index: -9;
+    cursor: none;
+}
+
+main>div>div.sectionHarmoni>div,
+main>div>div.sectionGem>div {
+    margin: 0;
+}
+
+main>div>div.sectionHarmoni>div.harmo2>p {
+    width: 50%;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.container>.sectionHarmoni {
+    height: unset !important;
+}
+
+.harrmoImportant {
+    height: 20vh !important;
+}
+
+.heroTitle h1.textTengah {
+    margin-top: 1.3em;
+}
+
+.descriptionTitle {
+    height: fit-content !important;
+}
+
+.heroDescription {
+    margin-bottom: 10em;
+}
+
+.harmo3 {
+    text-align: left;
+}
+
+.harmo4 {
+    text-align: left;
+}
+
+body>main>div>div.sectionHarmoni>div.harmoDescription>div>h3 {
+    line-height: 1.1;
+}
+
+.harmoDescription {
+    width: 60%;
+    margin: 5em auto !important;
+}
+
+
+main>div>div.sectionGem>div.gem4>h2 {
+    text-align: right;
+}
+
+.container p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+p.harmonySingle {
+    font-size: 38px;
+    width: 161%;
+}
+
+sup {
+    font-size: 69px;
+    color: red;
+    vertical-align: top;
+}
+
+.gem3 {
+    text-align: center;
+}
+
+.harmo2 {
+    padding-bottom: 100px !important;
+}

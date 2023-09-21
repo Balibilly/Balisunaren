@@ -1,0 +1,153 @@
+.typeBar {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: stretch;
+    gap: 0.5em;
+}
+
+.typeBar label {
+    width: 100%;
+    display: block;
+    margin: 4em 0 0.5em 0;
+}
+
+input#fontUpload {
+    height: 5em;
+}legend.richType {
+    gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+legend.richType input {
+    width: 90px;
+}
+
+.textAlign {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+input#textColor {
+    width: calc(90px - 1.8em);
+    height: 3.05em;
+}
+
+.typeBar button, .typeBar input, .typeBar select {
+    height: 2.5em;
+}
+
+legend.variable {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5em;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+.openType {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.typeBar legend {
+    margin-bottom: 2em;
+}
+
+.waterfallRasio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 5em 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input#baseText, input#baseCount {
+    width: 15%;
+}
+
+select.fontScale {
+    width: 64.571170%;
+}
+
+.responsive {
+    position: sticky;
+    bottom: 20px;
+    margin: auto;
+    width: 45%;
+    display: block;
+    box-sizing: border-box;
+    background: white;
+    padding: 0.5em;
+}
+
+.responsiveContainer {
+    box-sizing: border-box;
+    display: flex;
+    gap: 0.5em;
+    margin: 0;
+    align-items: center;
+}
+
+.responsiveContainer button {
+    width: 10%;
+}
+
+.responsiveContainer input {width: 100%;}
+
+
+.zoom {
+    width: 55%;
+    margin-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.zoom span {
+    display: block;
+    position: relative;
+    width: 10%;
+    font-size: 20px;
+}
+
+
+
+
+#toolbox {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toolbox input[type="number"] {
+    margin: 5px;
+}
+
+#toolbox input[type="color"] {
+    margin: 5px;
+    vertical-align: middle;
+}
+
+#toolbox button {
+    margin: 5px;
+    vertical-align: middle;
+}
